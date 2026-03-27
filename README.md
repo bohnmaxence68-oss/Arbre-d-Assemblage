@@ -1,11 +1,28 @@
-<div align="center">
+# Arbre d'Assemblage de Chaudronnerie
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+Application pour les Ingénieurs Méthodes en chaudronnerie/métallerie pour concevoir visuellement l'arbre de montage hiérarchique d'un produit complexe.
 
-  <h1>Built with AI Studio</h2>
+## Fonctionnalités
+- **Import Excel** : Copier-coller direct depuis Excel (Repère, Nom, Quantité).
+- **Drag & Drop** : Glissez-déposez des articles et des opérations sur le canvas.
+- **Édition Directe** : Modifiez les noms, références et quantités directement sur le graphique.
+- **Export** : Exportez votre arbre en PNG ou PDF.
+- **Suggestions IA** : Utilisez Gemini pour suggérer des méthodes d'assemblage.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Déploiement sur GitHub Pages
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+L'application est configurée pour être déployée automatiquement sur GitHub Pages.
 
-</div>
+### Étapes :
+1. Créez un nouveau dépôt sur GitHub.
+2. Poussez votre code sur la branche `main`.
+3. Allez dans les **Settings** de votre dépôt > **Secrets and variables** > **Actions**.
+4. Ajoutez un **New repository secret** nommé `GEMINI_API_KEY` avec votre clé API Gemini (obtenue sur [Google AI Studio](https://aistudio.google.com/)).
+5. Le déploiement se lancera automatiquement via GitHub Actions.
+6. Une fois terminé, allez dans **Settings** > **Pages** et assurez-vous que la source est la branche `gh-pages`.
+
+## Développement Local
+```bash
+npm install
+npm run dev
+```
